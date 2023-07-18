@@ -15,8 +15,8 @@
 
 </head>
 <body class="antialiased">
-<x-header/>
-{{$slot}}
-<x-footer/>
+    <x-header/>
+    {{$slot}}
+    <x-footer/>
 </body>
 </html>
