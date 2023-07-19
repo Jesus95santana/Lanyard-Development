@@ -5,8 +5,8 @@
         </figure>
         <nav class="flex">
             <ul class="flex items-center">
-                <li class="px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-[#234162] hover:text-white hover:cursor-pointer"><a href="">EXCAVATION SITES</a></li>
-                <li class="px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-[#234162] hover:text-white hover:cursor-pointer"><a href="">CONTACT</a></li>
+                <li class="px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-blue hover:text-white hover:cursor-pointer"><a href="">EXCAVATION SITES</a></li>
+                <li class="px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-blue hover:text-white hover:cursor-pointer"><a href="">CONTACT</a></li>
             </ul>
         </nav>
         <div class="headerContactContainer flex items-center p-2">
