@@ -7,7 +7,7 @@
         </figure>
         <nav class="flex">
             <ul class="flex items-center">
-                <li class="px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-blue hover:text-white hover:cursor-pointer"><a href="">EXCAVATION SITES</a></li>
+                <li class="px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-blue hover:text-white hover:cursor-pointer"><a href="{{route('excavationPage')}}">EXCAVATION SITES</a></li>
                 <li class="px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-blue hover:text-white hover:cursor-pointer"><a href="{{route('contactPage')}}">CONTACT</a></li>
             </ul>
         </nav>

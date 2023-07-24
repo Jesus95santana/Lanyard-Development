@@ -16,6 +16,10 @@ Route::get('/', function () {
     return view('home');
 })->name('homePage');
 
+Route::get('/excavationSites', function () {
+    return view('excavationSites');
+})->name('excavationPage');
+
 Route::get('/contact', function() {
     return view('contact');
 })->name('contactPage');
