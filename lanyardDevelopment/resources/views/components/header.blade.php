@@ -11,7 +11,7 @@
                     <a href="{{route('excavationPage')}}">EXCAVATION SITES</a>
                     <ul x-show="open" class="absolute top-[100%] left-0 w-full">
                         <li class="text-center bg-white px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-gray-500 hover:text-white hover:cursor-pointer">
-                            <a href="">Warnell Burrow Pit</a>
+                            <a href="{{route('warnellPage')}}">Warnell Borrow Pit</a>
                         </li>
                         <li class="text-center bg-white px-4 py-2 font-bold text-gray-500 font-[sans-serif] hover:bg-gray-500 hover:text-white hover:cursor-pointer">
                             <a href="">Belford and Lewis Borrow Pits</a>

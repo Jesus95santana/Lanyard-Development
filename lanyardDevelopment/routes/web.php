@@ -20,6 +20,10 @@ Route::get('/excavationSites', function () {
     return view('excavationSites');
 })->name('excavationPage');
 
+Route::get('/warnellBorrowPit', function () {
+    return view('warnellPage');
+})->name('warnellPage');
+
 Route::get('/contact', function() {
     return view('contact');
 })->name('contactPage');
