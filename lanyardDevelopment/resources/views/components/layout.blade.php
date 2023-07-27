@@ -16,6 +16,74 @@
 
     <!-- Styles -->
     @vite(['resources/css/app.css','resources/js/app.js'])
+    <style>
+        .slideshow {
+            display: flex;
+            overflow: hidden;
+            max-width: 600px; /* Set the desired width of your slideshow */
+            margin: 0 auto;
+        }
+
+        .slide {
+            flex-shrink: 0;
+            width: 100%;
+            transition: opacity 0.3s;
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnails img {
+            width: 100px; /* Set the desired width of your thumbnails */
+            height: auto;
+            margin: 0 5px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .thumbnails img.active {
+            opacity: 1;
+        }
+    </style>
+    <script>
+        function slideshow() {
+            return {
+                slides: [
+                    { image: '/img/204.jpg', title: 'Slide 1' },
+                    { image: '/img/204.jpg', title: 'Slide 2' },
+                    { image: '/img/204.jpg', title: 'Slide 3' },
+                    // Add more slides here
+                ],
+                currentIndex: 0,
+                init() {
+                    // Auto-advance slides every 5 seconds (adjust as needed)
+                    setInterval(() => {
+                        this.nextSlide();
+                    }, 2000);
+                },
+                prevSlide() {
+                    this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+                },
+                nextSlide() {
+                    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+                },
+                goToSlide(index) {
+                    this.currentIndex = index;
+                },
+            };
+        }
+
+    </script>
 </head>
 <body class="antialiased">
     <x-header></x-header>
